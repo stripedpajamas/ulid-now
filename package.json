@@ -1,0 +1,22 @@
+{
+  "name": "ulid-now",
+  "version": "1.0.0",
+  "description": "get a ulid now at ulid.now.sh",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "now-build": "npm run build",
+    "now-dev": "npm run dev"
+  },
+  "keywords": [],
+  "author": "Peter Squicciarini <stripedpajamas273@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "ulid": "^2.3.0"
+  }
+}
