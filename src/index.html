@@ -1,15 +1,23 @@
 <html>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   <body>
-    <section id="header">
-      <h1>ULID Now</h1>
-    </section>
-    <section id="main">
-      <span id="ulid-output" role="main"></span>
-    </section>
-    <section id="footer">
-
-    </section>
+    <article class="vh-100 w-100 bg-dark-pink sans-serif">
+      <div class="min-vh-100 flex flex-column tc washed-blue">
+        <div id="content" style="flex: 1">
+          <section id="header" class="pa3 outline mv3">
+            <h1 class="f1">ULID Now</h1>
+          </section>
+          <section id="main" class="pa3 outline mv4">
+            <code id="ulid-output" role="main" class="f3 f2-m f1-l fw2 mv3"></span>
+          </section>
+        </div>
+        <section id="footer" class="pa3 outline">
+          <p class="f3">
+            Made with 💙 by <a href="https://github.com/stripedpajamas/ulid-now" class="link white-80 hover-light-blue">Peter Squicciarini</a>
+          </p>
+        </section>
+      </div>
+    </article>
     <script src="index.js" async></script>
   </body>
 </html>
