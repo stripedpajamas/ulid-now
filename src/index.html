@@ -1,20 +1,25 @@
 <html>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   <body>
-    <article class="vh-100 w-100 bg-dark-pink sans-serif">
-      <div class="min-vh-100 flex flex-column tc washed-blue">
+    <article class="vh-100 w-100 bg-green sans-serif">
+      <div class="min-vh-100 flex flex-column tc white">
         <div id="content" style="flex: 1">
-          <section id="header" class="pa3 outline mv3">
-            <h1 class="f1">ULID Now</h1>
+          <section id="header" class="">
+            <h1 class="f3 f2-m f1-l">ULID Now</h1>
           </section>
-          <section id="main" class="pa3 outline mv4">
-            <code id="ulid-output" role="main" class="f3 f2-m f1-l fw2 mv3"></span>
+          <section id="main" class="flex flex-column center">
+            <code id="ulid-output" role="main" class="f4 f3-m f2-l fw2"></code>
+            <img src="refresh.svg" class="center mw5-l mw4-m mw-2 pointer" alt="Get another ULID" onclick="location.reload();" />
           </section>
         </div>
-        <section id="footer" class="pa3 outline">
-          <p class="f3">
-            Made with 💙 by <a href="https://github.com/stripedpajamas/ulid-now" class="link white-80 hover-light-blue">Peter Squicciarini</a>
+        <section id="footer" class="">
+          <p>
+            ULIDs are Universally Unique Lexicographically Sortable Identifier. Find out more <a href="https://github.com/ulid/spec" class="link dark-blue fw6 hover-dark-gray">here</a>.
           </p>
+          <p class="f5">
+            ULID Now made with 💙 by <a href="https://github.com/stripedpajamas/ulid-now" class="link dark-blue fw6 hover-dark-gray">Peter Squicciarini</a>
+          </p>
+
         </section>
       </div>
     </article>
