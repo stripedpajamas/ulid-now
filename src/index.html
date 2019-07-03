@@ -1,36 +1,47 @@
+<!DOCTYPE html>
 <html lang="en-US">
-  <title>ULID Now</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <body>
-    <article class="vh-100 w-100 sans-serif">
-      <div class="min-vh-100 flex flex-column tc">
-        <section id="header" class="">
-          <h1 class="f3 f2-m f1-l">ULID Now</h1>
-        </section>
-        <div id="content" style="flex: 1" class="flex justify-center items-center">
-          <section id="main" class="mb6">
-            <span>
-              <code id="ulid-output" role="main" class="f4 f3-m f2-l fw2"></code>
-              <input type=hidden id="hidden-ulid-output" />
-              <button class="bn" id="copy">
-                <img src="copy.svg" style="vertical-align: text-bottom" class="pl2 w2 pointer" alt="Copy ULID" />
-              </button>
-              <button class="bn" id="refresh">
-                <img src="refresh.svg" style="vertical-align: text-bottom" class="pl2 w2 pointer" alt="Get another ULID" />
-              </button>
-            </span>
-          </section>
-        </div>
-        <section id="footer" class="">
-          <p>
-            ULIDs are Universally Unique Lexicographically Sortable Identifier. <a href="https://github.com/ulid/spec" class="link dark-blue fw6 hover-dark-gray">Find out more about ULIDs here.</a>
-          </p>
-          <p class="f5">
-            💙 this website is <a href="https://github.com/stripedpajamas/ulid-now" class="link dark-blue fw6 hover-dark-gray">open source</a> 💙
-          </p>
+<title>ULID Now</title>
+<meta name="Description" content="Get a ULID now">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css" />
+<!-- blank favicon to avoid a wasted http request -->
+<link
+  href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+  rel="icon" type="image/x-icon" />
+<body>
+  <article class="vh-100 w-100 sans-serif">
+    <div class="min-vh-100 flex flex-column tc">
+      <section id="header" class="">
+        <h1 class="f3 f2-m f1-l">ULID Now</h1>
+      </section>
+      <div id="content" style="flex: 1" class="flex justify-center items-center">
+        <section id="main" class="mb6">
+          <span>
+            <code id="ulid-output" role="main" class="f4 f3-m f2-l fw2"></code>
+            <input type=hidden id="hidden-ulid-output" />
+            <button class="bn" id="copy">
+              <img src="copy.svg" style="vertical-align: text-bottom" class="pl2 w2 pointer" alt="Copy ULID" />
+            </button>
+            <button class="bn" id="refresh">
+              <img src="refresh.svg" style="vertical-align: text-bottom" class="pl2 w2 pointer"
+                alt="Get another ULID" />
+            </button>
+          </span>
         </section>
       </div>
-    </article>
-    <script src="index.js" async></script>
-  </body>
+      <section id="footer" class="">
+        <p>
+          ULIDs are Universally Unique Lexicographically Sortable Identifier. <a href="https://github.com/ulid/spec"
+            class="link dark-blue fw6 hover-dark-gray">Find out more about ULIDs here.</a>
+        </p>
+        <p class="f5">
+          💙 this website is <a href="https://github.com/stripedpajamas/ulid-now"
+            class="link dark-blue fw6 hover-dark-gray">open source</a> 💙
+        </p>
+      </section>
+    </div>
+  </article>
+  <script src="index.js" async></script>
+</body>
+
 </html>
