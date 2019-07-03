@@ -42,6 +42,13 @@
     </div>
   </article>
   <script src="index.js" async></script>
+  <script>
+  // Activate the service worker
+  if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost')) {
+    const sw = `service-worker.js`
+    window.addEventListener('load', () => navigator.serviceWorker.register(sw))
+  }
+  </script>
 </body>
 
 </html>
