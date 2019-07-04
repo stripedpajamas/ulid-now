@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<title>ULID Now</title>
-<meta name="Description" content="Get a ULID now">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css" />
-<!-- blank favicon to avoid a wasted http request -->
-<link
-  href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
-  rel="icon" type="image/x-icon" />
+
+<head>
+  <title>ULID Now</title>
+  <meta name="Description" content="Get a ULID now">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="./manifest.webmanifest">
+  <!-- blank favicon to avoid a wasted http request -->
+  <link
+    href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+    rel="icon" type="image/x-icon" />
+</head>
+
 <body>
   <article class="vh-100 w-100 sans-serif">
     <div class="min-vh-100 flex flex-column tc">
@@ -43,11 +48,11 @@
   </article>
   <script src="index.js" async></script>
   <script>
-  // Activate the service worker
-  if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost')) {
-    const sw = `service-worker.js`
-    window.addEventListener('load', () => navigator.serviceWorker.register(sw))
-  }
+    // Activate the service worker
+    if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost')) {
+      const sw = `service-worker.js`
+      window.addEventListener('load', () => navigator.serviceWorker.register(sw))
+    }
   </script>
 </body>
 
