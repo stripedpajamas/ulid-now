@@ -1,5 +1,6 @@
 {
   "name": "ULID Now",
+  "short_name": "ULID Now",
   "icons": [
     {
       "src": "/static/icon-192.png",
